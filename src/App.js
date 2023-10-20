@@ -92,8 +92,8 @@ const App = ({ signOut }) => {
              name="image"
              as="input"
              type="file"
-             style={{ alignSelf: "end" }}
-                                  />
+             style={{ alignSelf: "end" }} />
+                                 
           <Button type="submit" variation="primary">
             Create Note
           </Button>
@@ -113,7 +113,7 @@ const App = ({ signOut }) => {
     </Text>
     <Text as="span">{note.description}</Text>
     {note.image && (
-      <Image
+      <img
         src={note.image}
         alt={`visual aid for ${notes.name}`}
         style={{ width: 400 }}
